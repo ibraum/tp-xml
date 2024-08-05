@@ -1,0 +1,214 @@
+ESGIS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+etudiants::before{
+    content: "Gestion des etudiants d'esgis";
+    font-size: 1.5rem;
+    font-weight: bolder;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    padding: 20px 20px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 5px 2px hsla(0, 0%, 0%, 0.1);
+    border-radius: 5px;
+}
+
+ESGIS{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: hidden;
+    /* box-sizing: border-box; */
+}
+
+etudiants{
+    padding: 100px 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+
+ESGIS::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+    z-index: -4;
+}
+
+ESGIS::after{
+    content: "@PROJET XML";
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: blueviolet;
+    z-index: -4;
+}
+
+etudiant{
+    box-shadow: 0px 0px 5px 2px hsla(0, 0%, 0%, 0.2);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    height: 320px;
+    transition: all 0.2s 0.1s ease-in-out;
+}
+
+etudiant:hover{
+    transform: scale(1.1);
+}
+
+Code{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+code::before{
+    content: "Code";
+    color: hsla(0, 0%, 0%, 0.95);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+Filiere{
+    color: green;
+}
+
+LibelleUS{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+UE, Notes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+Notes Devoir, Notes Examen{
+    font-weight: 200;
+    padding: 4px;
+}
+
+Devoir, Examen{
+    margin: 6px;
+}
+
+Code, Nom, Prenom, Filiere, Niveau, LibelleUS, Devoir, Examen{
+    position: relative;
+}
+
+Nom, Prenom, Filiere, Niveau, LibelleUS, Devoir, Examen{
+    margin: 2px;
+}
+Nom::before{
+    content: "Nom";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+Prenom::before{
+    content: "Prénom";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+Filiere::before{
+    content: "Filière";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+Niveau::before{
+    content: "Niveau";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+LibelleUS::before{
+    content: "LibélléUS";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+Devoir::before{
+    content: "Devoir";
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+Examen::before{
+    content: "Examen";
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: hsla(0, 0%, 75%, 0.874);
+    font-size: .6rem;
+    font-weight: 100;
+}
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="XSLGestionESGIS.xsl"?> -->
+<?xml-stylesheet type='text/css' href='XMLGestionESGIS.css'?>   
+<!-- Etablissement du DTD-->
+<!DOCTYPE ESGIS [
+    <!ELEMENT ESGIS (etudiants)>
+    <!ELEMENT etudiants (etudiant+)>
+    <!ELEMENT etudiant (Code, Nom, Prenom, Filiere, Niveau, UE)>
+    <!ELEMENT Code (#PCDATA)>
+    <!ELEMENT Nom (#PCDATA)>
+    <!ELEMENT Prenom (#PCDATA)>
+    <!ELEMENT Filiere (#PCDATA)>
+    <!ELEMENT Niveau (#PCDATA)>
+    <!ELEMENT UE (LibelleUS, Notes)>
+    <!ELEMENT LibelleUS (#PCDATA)>
+    <!ELEMENT Notes (Devoir, Examen)>
+    <!ELEMENT Devoir (#PCDATA)>
+    <!ELEMENT Examen (#PCDATA)>
+]>
+
+<!-- Etablissement du de l'arbre-->
+<ESGIS>
+    <etudiants>
+        <etudiant>
+            <Code>1</Code>
+            <Nom>KONDO</Nom>
+            <Prenom>Ibrahim</Prenom>
+            <Filiere>IA-BD2</Filiere>
+            <Niveau>LICENCE</Niveau>
+            <UE>
+                <LibelleUS>Mérise</LibelleUS>
+                <Notes>
+                    <Devoir>18</Devoir>
+                    <Examen>20</Examen>
+                </Notes>
+            </UE>
+        </etudiant>
+
+        <etudiant>
+            <Code>2</Code>
+            <Nom>AMOUSSOU</Nom>
+            <Prenom>Joël</Prenom>
+            <Filiere>AL2</Filiere>
+            <Niveau>LICENCE</Niveau>
+            <UE>
+                <LibelleUS>C++</LibelleUS>
+                <Notes>
+                    <Devoir>18</Devoir>
+                    <Examen>18</Examen>
+                </Notes>
+            </UE>
+        </etudiant>
+
+        <etudiant>
+            <Code>3</Code>
+            <Nom>AGBOBLY</Nom>
+            <Prenom>Bernice</Prenom>
+            <Filiere>SRS2</Filiere>
+            <Niveau>LICENCE</Niveau>
+            <UE>
+                <LibelleUS>Sécurité Informatique</LibelleUS>
+                <Notes>
+                    <Devoir>19</Devoir>
+                    <Examen>18</Examen>
+                </Notes>
+            </UE>
+        </etudiant>
+    </etudiants>
+</ESGIS>
